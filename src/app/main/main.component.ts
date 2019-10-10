@@ -24,7 +24,7 @@ export class MainComponent implements OnInit {
     modelo:"Forte",
     year:2018,
     valor:370000,
-    imagen :""
+    imagen :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgAJ2022cGzfYKYY2lgsEenWPqBgtgOyUw15NlU7qa7Znzux5Pw"
   }
     auto3 ={
       marca:"Chevrolet",
@@ -33,7 +33,7 @@ export class MainComponent implements OnInit {
       modelo:"Mustang",
       year:1960,
       valor:670000,
-      imagen :""  
+      imagen :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWso9jqQJRePVerT0SItRbgP9stCW8QYgJq38cflxMgdzExqV"  
     }
     auto4 ={
       marca:"Seat",
@@ -42,7 +42,7 @@ export class MainComponent implements OnInit {
       modelo:"Leon",
       year:2018,
       valor:470000,
-      imagen :""
+      imagen :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo72pwzIzQzJUI7mHKqM7aBZhXTWmN45iwOKr7OosE5XRXTDouxw"
     }
   ngOnInit() {
 

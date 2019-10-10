@@ -1,20 +1,36 @@
 <div class="main" >
 
-    <div class="media">
-            <img src="{{auto.imagen}}" width="400px" class="align-self-center mr-3" alt="...">
-            <div class="media-body">
-              <h5 class="mt-0">{{auto.modelo}}</h5>
-              <p>Tu auto {{auto.marca}} {{auto.modelo}} color {{auto.color}} del año {{auto.year}} con {{auto.numPuertas}} puertas tiene un valor de $ {{auto.valor}}</p>
-              
-            </div>
-
-            <div class="media">
-              <img src="{{auto2.imagen}}" width="400px" class="align-self-center mr-3" alt="...">
-              <div class="media-body">
-                <h5 class="mt-0">{{auto2.modelo}}</h5>
-                <p>Tu auto {{auto2.marca}} {{auto2.modelo}} color {{auto2.color}} del año {{auto2.year}} con {{auto2.numPuertas}} puertas tiene un valor de $ {{auto2.valor}}</p>              
-
-
-          </div>
-          <button type="button" class="btn btn-info">Cotiza tu Seguro</button>
-</div> 
+  <ul class="list-unstyled">
+    <li class="media">
+      <img src="{{auto.imagen}}" width="400px" class="align-self-center mr-4" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">{{auto.modelo}}</h5>
+        Tu auto {{auto.marca}} {{auto.modelo}} color {{auto.color}} del año {{auto.year}} con {{auto.numPuertas}} puertas tiene un valor de $ {{auto.valor}}
+      </div>
+    </li>
+    <li class="media my-4">
+      <img src="{{auto2.imagen}}" width="400px" class="align-self-center mr-4" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">{{auto2.modelo}}</h5>
+        <p>TU auto {{auto2.marca}} {{auto2.modelo}} color {{auto2.color}} del año {{auto2.year}} con {{auto2.numPuertas}} puertas tiene un valor de $ {{auto2.valor}}</p>
+      </div>
+    </li>
+    <li class="media">
+      <img src="{{auto3.imagen}}" width="400px" class="align-self-center mr-4" alt="...">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">{{auto3.modelo}}</h5>
+        <p>Tu auto {{auto3.marca}} {{auto3.modelo}} color {{auto3.color}} del año {{auto3.year}} con {{auto3.numPuertas}} puertas tiene un valor de $ {{auto3.valor}}</p>
+      </div>
+    </li>
+    <br>
+    <li class="media">
+      <img src="{{auto4.imagen}}" width="400px" class="align-self-center mr-4" alt="..." >
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">{{auto4.modelo}}</h5>
+        <p>Tu auto {{auto4.marca}} {{auto4.modelo}} color {{auto4.color}} del año {{auto4.year}} con {{auto4.numPuertas}} puertas tiene un valor de $ {{auto4.valor}}</p> 
+      </div>
+    </li>
+  </ul>
+    
+<button type="button" class="btn btn-info">Cotiza tu Seguro</button> 
+</div>
