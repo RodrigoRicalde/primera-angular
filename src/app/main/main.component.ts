@@ -44,6 +44,10 @@ export class MainComponent implements OnInit {
       valor:470000,
       imagen :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo72pwzIzQzJUI7mHKqM7aBZhXTWmN45iwOKr7OosE5XRXTDouxw"
     }
+    
+    autos=[];
+
+
   ngOnInit() {
 
     console.log("Saludos !!!!");
@@ -53,8 +57,15 @@ export class MainComponent implements OnInit {
     console.log(miArreglo);
     console.log(tipoBooleano[3]);
 
-    let autos=[this.auto,this.auto2,this.auto3,this.auto4];
-    console.log(autos);
+    this.autos=[this.auto,this.auto2,this.auto3,this.auto4];
+    console.log(this.autos);
+
+    for(let auto of this.autos){
+
+      console.log("El auto es : ", auto)
+
+    }
+
 
   }
 
