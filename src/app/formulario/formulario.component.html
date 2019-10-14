@@ -2,18 +2,19 @@
 <form>
         <div class="row">
           <div class="col">
-            <input [(ngModel)]="Marca" type="text" class="form-control" placeholder="Marca del Auto">
+            <input [(ngModel)]="marca" name="marca" type="text" class="form-control" placeholder="Marca del Auto">
           </div>
           <div class="col">
-            <input [(ngModel)]="Modelo" type="text" class="form-control" placeholder="Modelo del Auto">
+            <input type="text" [(ngModel)]="modelo" name="modelo"  class="form-control" placeholder="Modelo del Auto">
           </div>
           <div class="col">
-                <input [(ngModel)]="Year" type="text" class="form-control" placeholder="Año del Auto">
+                <input [(ngModel)]="year" name="year" type="text" class="form-control" placeholder="Año del Auto">
               </div>
-              
         </div>
         <br>
-              Los datos que ingresaste son {{Marca}} {{Modelo}} y {{Year}}
+              Los datos que ingresaste son {{marca}} , {{modelo}} y {{year}}
         <br>
         <br>
       </form>
+
+      
