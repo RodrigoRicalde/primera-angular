@@ -66,7 +66,35 @@ export class MainComponent implements OnInit {
 
     }
 
-
+    
   }
 
+  cotizar(autos){
+
+    console.log("Aqui empezamos a cotizar ....", autos);
+    let porcentajevalor = 0.15
+    let  actual = new Date().getFullYear();
+    console.log(actual);
+    if(autos.color == "Rojo"){
+
+      porcentajevalor = porcentajevalor + .05;
+
+    }
+
+    if(autos.marca == "Seat" ){
+
+      porcentajevalor = porcentajevalor + .02;
+
+    }
+    
+    if(autos.year == 2018 ){
+
+      porcentajevalor =  porcentajevalor + .03;
+
+    }
+
+
+    console.log(porcentajevalor);
+
+  }
 }

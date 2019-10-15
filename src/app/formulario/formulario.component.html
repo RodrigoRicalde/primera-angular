@@ -11,8 +11,22 @@
                 <input [(ngModel)]="year" name="year" type="text" class="form-control" placeholder="Año del Auto">
               </div>
         </div>
+        <div class="row">
+          <div class="col">
+            <input [(ngModel)]="color" name="color" type="text" class="form-control" placeholder="Color del Auto">
+          </div>
+          <div class="col">
+            <input type="text" [(ngModel)]="valor" name="valor"  class="form-control" placeholder="Valor del Auto">
+          </div>
+          <div class="col">
+                <input [(ngModel)]="imagen" name="imagen" type="text" class="form-control" placeholder="Foto del Auto">
+              </div>
+        </div>
+
         <br>
               Los datos que ingresaste son {{marca}} , {{modelo}} y {{year}}
+              <br>
+              <button class="btn btn-warning">Agregar Nuevo </button>
         <br>
         <br>
       </form>

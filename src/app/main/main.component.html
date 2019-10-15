@@ -5,7 +5,7 @@
     <div class="media-body">
       <h5 class="mt-0">{{auto.modelo}}</h5>
       <p>Tu auto {{auto.marca}} {{auto.modelo}} color {{auto.color}} del año {{auto.year}} con {{auto.numPuertas}} puertas tiene un valor de $ {{auto.valor}} </p>
-      <button type="button" class="btn btn-info">Cotiza tu Seguro</button>
+      <button (click)="cotizar(auto)" type="button" class="btn btn-info">Cotiza tu Seguro</button>
       
      </div> 
       
