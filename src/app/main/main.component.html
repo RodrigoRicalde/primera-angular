@@ -1,9 +1,9 @@
 <div class="main" >
-  <app-formulario></app-formulario>
+  
   <div *ngFor="let auto of autos" class="media">
-    <img src="{{auto.imagen}}" width="400px" class="align-self-center mr-3" alt="...">
+    <img src="{{auto.imagen}}" width="400px" class="align-self-center mr-3" alt="504 NOT FOUND">
     <div class="media-body">
-      <h5 class="mt-0">{{auto.modelo}}</h5>
+      <h5 class="mt-0">{{autos.modelo}}</h5>
       <p>Tu auto {{auto.marca}} {{auto.modelo}} color {{auto.color}} del año {{auto.year}} con {{auto.numPuertas}} puertas tiene un valor de $ {{auto.valor}} </p>
       <button (click)="cotizar(auto)" type="button" class="btn btn-info">Cotiza tu Seguro</button>
       

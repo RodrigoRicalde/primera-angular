@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import {FormsModule} from "@angular/forms"; 
 import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

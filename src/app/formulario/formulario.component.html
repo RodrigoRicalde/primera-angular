@@ -1,5 +1,5 @@
 
-<form>
+  <form class="formulario" >
         <div class="row">
           <div class="col">
             <input [(ngModel)]="marca" name="marca" type="text" class="form-control" placeholder="Marca del Auto">
@@ -11,6 +11,7 @@
                 <input [(ngModel)]="year" name="year" type="text" class="form-control" placeholder="Año del Auto">
               </div>
         </div>
+        <br>
         <div class="row">
           <div class="col">
             <input [(ngModel)]="color" name="color" type="text" class="form-control" placeholder="Color del Auto">
@@ -24,11 +25,21 @@
         </div>
 
         <br>
-              Los datos que ingresaste son {{marca}} , {{modelo}} y {{year}}
+              <a>Los datos que ingresaste son {{marca}} , {{modelo}} {{year}} {{color}} {{valor}} {{imagen}} : </a>
               <br>
-              <button class="btn btn-warning">Agregar Nuevo </button>
+              <br>
+              <button (click)="agregarNuevo()" class="btn btn-warning">Agregar Nuevo </button>
         <br>
         <br>
       </form>
 
+
+
+      
+        
+    
+      
+        
+       
+      
       
