@@ -17,33 +17,7 @@ export class MainComponent implements OnInit {
   // valor:270000,
   // imagen :"https://cdn.motor1.com/images/mgl/qPZlz/s3/2018-kia-rio-first-drive.jpg?%3E"
   // }
-  // auto2 ={
-  //   marca:"KIA",
-  //   color:"Blanco",
-  //   numPuertas:"4",
-  //   modelo:"Forte",
-  //   year:2018,
-  //   valor:370000,
-  //   imagen :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwgAJ2022cGzfYKYY2lgsEenWPqBgtgOyUw15NlU7qa7Znzux5Pw"
-  // }
-  //   auto3 ={
-  //     marca:"Chevrolet",
-  //     color:"Negro",
-  //     numPuertas:"2",
-  //     modelo:"Mustang",
-  //     year:1960,
-  //     valor:670000,
-  //     imagen :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiWso9jqQJRePVerT0SItRbgP9stCW8QYgJq38cflxMgdzExqV"  
-  //   }
-  //   auto4 ={
-  //     marca:"Seat",
-  //     color:"Rojo",
-  //     numPuertas:"4",
-  //     modelo:"Leon",
-  //     year:2018,
-  //     valor:470000,
-  //     imagen :"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo72pwzIzQzJUI7mHKqM7aBZhXTWmN45iwOKr7OosE5XRXTDouxw"
-  //   }
+
     
    autos=[this.http.consultarAutos];
    
@@ -70,6 +44,16 @@ export class MainComponent implements OnInit {
     this.autos = await this.http.consultarAutos();
     
   }
+
+  async borrar(id){
+
+    await this.http.borrarAuto(id);
+
+    this.autos = await this.http.consultarAutos();
+
+  }
+
+
 
   cotizar(autos){
 

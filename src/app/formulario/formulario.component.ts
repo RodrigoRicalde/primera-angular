@@ -43,7 +43,7 @@ export class FormularioComponent implements OnInit {
   ngOnInit() {
 
       this.http.consultarAutos();
-
+      
   }
 
     year: any;

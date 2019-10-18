@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class HttpService {
- url = "https://us-central1-adamo-test-1.cloudfunctions.net/autos-firebase/autos/rodrigo"
+ url = "https://us-central1-adamo-test-1.cloudfunctions.net/autos-firebase/autos/rodrigo2"
 
 
   constructor(private client:HttpClient) { }
@@ -16,8 +16,7 @@ export class HttpService {
 
     console.log("Guardando datos .... ");
 
-    await this.client.post(this.url,{auto}).toPromise();
-
+    await this.client.post(this.url, auto).toPromise();
     console.log("Debio guardar datos");
 
   }
@@ -27,6 +26,15 @@ export class HttpService {
    let autosGuardados= await this.client.get(this.url).toPromise();
     console.log("Mis autos guardados son:  ", autosGuardados);
     return autosGuardados;
+  }
+
+  async borrarAuto(id){
+
+    await this.client.delete(this.url + "/" + id ).toPromise();
+    
+    console.log("Se borro un auto");
+
+
   }
 
 
